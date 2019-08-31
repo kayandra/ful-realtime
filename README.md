@@ -1,0 +1,31 @@
+# The Current State of Real-time on The Web
+
+- Introduction
+  - Name: Samuel Oloruntoba
+  - Role: Software Developer & Team member scotch.io
+  - Social: Twitter, Github, Codepen
+- The Problem with HTTP
+  - Textual representation of HTTP request/response
+  - 3D video
+- Previous solutions:
+  - LiveConnect & Comet: Complex architecture, difficult and expensive
+  - XHR Long-polling: wasted resources
+- Considerations for today
+  - Built on Existing technologies
+  - AJAX: client only
+    - Submitting a form etc
+    - Abuse: XHR long-polling
+  - SSE: server only
+    - 3D video
+    - Examples: twitter timeline, stock prices
+    - Abuse: No idle state
+  - WebSockets: AJAX and SSE as one
+    - 3D video
+    - Examples: Chat, Multiplayer games
+    - Abuse: using it in place of AJAX or SSE
+- Demo
+  - Panel shows number of active users
+  - Click on Button -> generates unique page
+  - Redirects to unique page -> Loads 3D scene
+  - Visit `/control` on mobile and input code, shows control pad
+- Conclusion

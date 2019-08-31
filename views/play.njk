@@ -1,0 +1,9 @@
+{% extends 'layouts/base.njk' %}
+
+{% block footer %}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/108/three.min.js"></script>
+  <script>
+    const PLAY_ID = "{{ request.params.code }}";
+  </script>
+  <script src="/assets/play.js"></script>
+{% endblock footer %}

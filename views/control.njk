@@ -1,0 +1,14 @@
+{% extends 'layouts/base.njk' %}
+
+{% block content %}
+  <div id="wrapper">
+    <label class="block text-gray-700 text-sm font-bold mb-2" for="code">
+      Enter Code:
+    </label>
+    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="code" type="text" autocomplete="off" placeholder="code">
+  </div>
+{% endblock %}
+
+{% block footer %}
+  <script src="/assets/control.js"></script>
+{% endblock footer %}

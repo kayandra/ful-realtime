@@ -1,0 +1,15 @@
+{
+  "name": "realtime",
+  "version": "1.0.0",
+  "author": "Samuel Oloruntoba",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-ws": "^4.0.0",
+    "nunjucks": "^3.2.0",
+    "random-int": "^2.0.0"
+  }
+}
